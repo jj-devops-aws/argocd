@@ -15,7 +15,7 @@ spec:
     helm:
       parameters:
         - name: service.type
-          value: nodePort
+          value: ClusterIP
   project: default
   syncPolicy:
     automated:
