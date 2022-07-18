@@ -5,8 +5,8 @@ metadata:
 spec:
   destination:
     name: ''
-    namespace: ''
-    server: ''
+    namespace: default
+    server: 'https://kubernetes.default.svc'
   source:
     path: ''
     repoURL: 'https://jj-devops-aws.github.io/helm-repo-new/'
