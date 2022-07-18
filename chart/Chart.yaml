@@ -1,0 +1,10 @@
+---
+apiVersion: v2
+name: helm-chart-test
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+dependencies:
+- name: helm-chart-test
+  version: 0.1.0
+  repository: https://jj-devops-aws.github.io/helm-repo-new/
