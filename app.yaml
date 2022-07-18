@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ci-yaml
+spec:
+  destination:
+    name: ''
+    namespace: ''
+    server: ''
+  source:
+    path: ''
+    repoURL: 'https://jj-devops-aws.github.io/helm-repo-new/'
+    targetRevision: 0.1.0
+    chart: helm-chart-test
+    helm:
+      parameters:
+        - name: service.type
+          value: nodePort
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
